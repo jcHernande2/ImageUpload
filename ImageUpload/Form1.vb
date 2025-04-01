@@ -7,6 +7,15 @@
                 Nothing Then
             ' Asignar la imagen al PictureBox
             PictureBox1.Image = loadedImage
+        Else
+            Dim defaultPath As String = AppDomain.CurrentDomain.BaseDirectory ' Usar el directorio actual de la aplicación
+            Dim position As Integer = defaultPath.LastIndexOf("ImageUpload")
+            If position <> -1 Then
+                ' Obtener la subcadena hasta el índice encontrado
+                defaultPath = defaultPath.Substring(0, position + "ImageUpload".Length)
+            End If
+            Dim imagePath As String = System.IO.Path.Combine(defaultPath, "resources\default.jpg")
+            PictureBox1.Image = Image.FromFile(imagePath)
         End If
 
     End Sub
@@ -30,4 +39,5 @@
 
         End If
     End Sub
+
 End Class
