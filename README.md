@@ -1,5 +1,5 @@
 # Carga de imagen
-## Pequeño proyecto en visual Basic para probar y verificar el codigo para cargar una imagen en windows Aplication.
+## Pequeño proyecto en visual Basic para probar y verificar el codigo que cargar una imagen en windows Aplication.
 
 ### ¿Como lo prueba el usuario?
 
